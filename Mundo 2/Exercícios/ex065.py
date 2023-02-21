@@ -3,10 +3,17 @@
 resp = 's'
 soma = 0
 cont = 0
-
 while resp == 's':
     cont += 1
     n = int(input('Digite um número: '))
+    if cont == 1:
+        maior = n
+        menor = n
+    else:
+        if n > maior:
+            maior = n
+        elif n < menor:
+            menor = n
     soma += n
     resp = str(input('Quer digitar outro? S|N: ')).strip().lower()
     media = soma / cont
@@ -14,5 +21,7 @@ print('========================================')
 print(f'Soma dos valores digitados: {soma}')
 print(f'Quantidade de valores digitados: {cont}')
 print(f'Média entre os valores digitados: {media:.1f}')
+print(maior)
+print(menor)
 print('========================================')
     
