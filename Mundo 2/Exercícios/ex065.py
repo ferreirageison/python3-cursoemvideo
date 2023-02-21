@@ -6,10 +6,10 @@ cont = 0
 while resp == 's':
     cont += 1
     n = int(input('Digite um número: '))
-    if cont == 1:
+    if cont == 1: # 'n' como maior e menos somente na primeira iteração, controlada pelo 'cont'
         maior = n
         menor = n
-    else:
+    else: # a partir da segunda iteração, faz o teste lógico para comparar com os valores armazenados nas variáveis na primeira iteração
         if n > maior:
             maior = n
         elif n < menor:
