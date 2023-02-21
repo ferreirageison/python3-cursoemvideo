@@ -13,6 +13,6 @@ while resp == 's':
 print('========================================')
 print(f'Soma dos valores digitados: {soma}')
 print(f'Quantidade de valores digitados: {cont}')
-print(f'Média entre os valores digitados: {media:.0f}')
+print(f'Média entre os valores digitados: {media:.1f}')
 print('========================================')
     
