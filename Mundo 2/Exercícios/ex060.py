@@ -2,7 +2,7 @@
 
 n = int(input('Digite um número para calcular seu fatorial: '))
 
-print(f'Calculando {n}! = ' , end=' ')
+print(f'Calculando {n}! = ', end=' ')
 
 # usando while
 c = n
@@ -13,11 +13,10 @@ f = 1
 #     f *= c
 #     c -= 1
 
-# Usando for    
+# Usando for
 for i in range(n, 0, -1):
-    print(f'{i}' , end=' ')
-    print('x' if i > 1 else '=' , end=' ')
+    print(f'{i}', end=' ')
+    print('x' if i > 1 else '=', end=' ')
     f *= i
 
 print(f)
-
