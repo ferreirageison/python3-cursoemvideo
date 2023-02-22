@@ -2,28 +2,23 @@
 
 from random import randint
 from time import sleep
-print('='*50)
-print('Vou pensar em um número de 1 a 5.')
-print('pensando...')
+
+print('Vou pensar em um número de 1 a 10, tente adivinhar...')
+print('Pensando...')
 sleep(1)
-print('pensando...')
-sleep(1)
-print('pensando...')
-sleep(1)
-print('Pronto!')
-print('='*50)
+
+compute = randint(1,10)
 player = 0
-cont = 1
-ia = randint(1, 5)  # usa o módulo para fazer o sorteio de números entre 1 e 5 e guarda na variável
-player = int(input('Tente adivinhar em qual número eu pensei? '))
-while player != ia:
+cont = 0
+
+while player != compute:
     cont += 1
-    print('='*50)
-    player = int(input('ERRRRRROUUUU, tente de novo! '))
-    print('='*50)
+    player = int(input('Em qual número eu pensei? '))
+    if player > compute:
+        print('Um pouco menos...')
+    else:
+        print('Um pouco mais...')
 if cont == 1:
-    print(f'Parabéns! Você é o bichão mesmo?! Acertou de primeira!')
-elif cont > 1:
-    print(
-         f'Depois de {cont} tentativas, você acertou. O número {ia} foi o que eu pensei.')
-    print('='*50)
+    print('Acertou de primeira!!!')
+else:
+    print(f'Depois de {cont} tentativas, finalmente você acertou.')
