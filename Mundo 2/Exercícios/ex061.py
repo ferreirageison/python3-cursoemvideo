@@ -2,10 +2,18 @@
 
 p = int(input('Digite o primeiro termo: '))
 r = int(input('Digite a razão: '))
-d = p + (10 - 1) * r  # formula matemática para encontrar o termo
-cont = 0
-while cont != 10:
-    for i in range(p, d + 1, r):
-        cont += 1
-        print(f'{cont:2}º termo: {i}')
+
+#t = 1 
+# while t <= 10:
+#     d = p + (t - 1) * r # formula matemática para encontrar o termo
+#     print(f'{t}º termo: {d}')
+#     t += 1
+# print('Fim')
+
+t = p
+c = 1
+while c <=10:
+    print(f'{t} -> ', end='')
+    t += r
+    c += 1
 print('Fim')
