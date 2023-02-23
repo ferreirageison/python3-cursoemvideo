@@ -6,11 +6,10 @@ n = int(input('Quantos valores da sequencia de fibonacci você deseja ver?: '))
 a = 0
 b = 1
 
-print(a)
-print(b)
+print(f'{a} ... {b} ...', end=' ')
 
 for i in range(2, n): # incia do 2 por causa dos 2 primeiros termos já estarem definidos e printados na tela
     c = a + b
-    print(c)
+    print(f'{c} ... ' , end='')
     a = b 
     b = c 
