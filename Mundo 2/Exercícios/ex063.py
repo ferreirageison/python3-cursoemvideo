@@ -5,11 +5,23 @@ n = int(input('Quantos valores da sequencia de fibonacci você deseja ver?: '))
 # define os 2 primeiros termos da sequencia de fibonacci
 a = 0
 b = 1
-
+print(f"{' La Sequenza Fibonacci ':=^60}")
 print(f'{a} ... {b} ...', end=' ')
 
-for i in range(2, n): # incia do 2 por causa dos 2 primeiros termos já estarem definidos e printados na tela
+cont = 3
+while cont <= n:
     c = a + b
-    print(f'{c} ... ' , end='')
-    a = b 
-    b = c 
+    print(f'{c} ... ', end='')
+    a = b
+    b = c
+    cont += 1
+print('FIM')
+
+# método com laço for
+# for i in range(2, n): # incia do 2 por causa dos 2 primeiros termos já estarem definidos e printados na tela
+#     c = a + b
+#     print(f'{c} ... ' , end='')
+#     a = b 
+#     b = c 
+# print('Fim')
+

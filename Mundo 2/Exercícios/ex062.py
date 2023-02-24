@@ -31,4 +31,4 @@ while user != 0:
         print('PAUSA')
         user = int(input('\nQuantos mais deseja ver na sequencia? : '))
         l += user
-print('Fim')
+print(f'Foram mostrados {c} termos.\nFim')
