@@ -1,0 +1,1 @@
+# faça um programa que ajude o jogador a criar palpites de jogo da mega-sena (1-60). perguntar quantos jogos serão gerados. cadastrar tudo em uma lista composta.

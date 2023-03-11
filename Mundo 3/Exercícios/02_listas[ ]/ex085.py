@@ -1,0 +1,1 @@
+# crie um programa onde o usuário digite 7 valores numéricos, e cadastre-os separados em lista dentro de uma única lista. no final mostrar valores pares e ímpares em ordem crescente.

@@ -1,0 +1,1 @@
+# aprimore o desafio anterior, mostrando: a) valores pares b) a soma dos valores da coluna 3 c) o maior valor da segunda linha
