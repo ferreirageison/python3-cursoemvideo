@@ -5,25 +5,36 @@ pessoas = []
 dados = []
 resp = ''
 
-# input
+# input de nome e peso
 while 'n' not in resp:
-    dados.append(str(input('Digite o nome: ')))
-    dados.append(int(input('Digite o peso: ')))
+    dados.append(str(input('Digite o nome: ')).capitalize())
+    dados.append(float(input('Digite o peso: ')))
     pessoas.append(dados[:])
     dados.clear()
-    resp = input('Deseja continuar? S/N: ').strip().lower()[0]
+    resp = input('Continuar? S/N: ').lower().strip()[0]
 
-# listas e testes da mais pesada e mais leve
-pesadas = pessoas[0]
-leves = pessoas[0]
+# variaveis e listas de peso
+maior = menor = pessoas[0][1]
+nomemaior = [] 
+nomemenor = []
+
+# laço p encontrar os pesos 
 for p in pessoas:
-    if p[1] > pesadas[1]:
-        pesadas = p
-    elif p[1] < leves[1]:
-        leves = p
+    if p[1] > maior:
+        maior = p[1]
+        nomemaior.clear()
+        nomemaior = [p[0]]
+    elif p[1] == maior:
+        nomemaior.append(p[0])
+    if p[1] < menor:
+        menor = p[1]
+        nomemenor.clear()
+        nomemenor = [p[0]]
+    elif p[1] == menor:
+        nomemenor.append(p[0])
 
 # output
-    print('='*40)
-    print(f'Total de pessoas: {len(pessoas)} ')
-    print(f'A pessoa mais pesada é {pesadas[0].capitalize()} e pesa {pesadas[1]}')
-    print(f'A pessoa mais leve é {leves[0].capitalize()} e pesa {leves[1]}')
+print('='*40)
+print(f'Total de pessoas: {len(pessoas)} ')
+print(f'A(s) pessoa(s) mais pesada(s): {nomemaior} com o peso de {maior}kgs')
+print(f'A(s) pessoa(s) mais leve(s): {nomemenor} com o peso de {menor}kgs')

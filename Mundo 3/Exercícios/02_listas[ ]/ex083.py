@@ -30,7 +30,7 @@ for v in expressao:
         pilha.append(v)  # adiciona um '(' aberto na pilha
     elif v == ')':
         if len(pilha) > 0:  # testa se a já pilha foi preenchida 
-            pilha.pop()  # se tiver, remove '(' da pilha
+            pilha.pop()  # remove '(' da pilha
 if len(pilha) == 0:  # se nenhum parenteses aberto sobrando na pilha
     print('Expressão válida')
 else:
