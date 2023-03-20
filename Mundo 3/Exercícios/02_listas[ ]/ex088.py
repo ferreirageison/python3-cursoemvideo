@@ -17,15 +17,16 @@ njogos = int(input('Deseja sortear quantos jogos?: '))
 while len(sorteios) < njogos:
 #sorteio de um jogo
     while len(jogo) < 6:
-        num = randint(0, 60)
+        num = randint(1, 60)
         if num not in jogo: # teste de duplicata
             jogo.append(num)
+            jogo.sort() # ordena permanentemente os números
     sorteios.append(jogo[:])
     jogo.clear()
 
 print(f'-=-=-=-=-< Sorteando {njogos} jogos >-=-=-=-=')
-for j in sorteios:
+for p, j in enumerate(sorteios):
     sleep(0.5)
-    print(j)
+    print(f'Jogo {p + 1}: {j}')
 sleep(0.5)
 print(f'=-=-=-=-=-=-< BOA SORTE! >-=-=-=-=-=-=')

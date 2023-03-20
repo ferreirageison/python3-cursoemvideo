@@ -1,18 +1,15 @@
 # crie um programa que crie uma matriz de dimensao 3x3 e preencha com valores lidos pelo teclado. no final mostre a matriz na tela, com a formatação correta.
 
-#listas
-matrix = []
-dado = []
+# listas
+matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
-#input
-for i in range(3):
-    dado.append(int(input(f'Digite um valor para {i}/0: ')))
-    dado.append(int(input(f'Digite um valor para {i}/1: ')))
-    dado.append(int(input(f'Digite um valor para {i}/2: ')))
-    matrix.append(dado[:])
-    dado.clear()
+# input
+for l in range(3):
+    for c in range(3):
+        matrix[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
 
-#output
-print(matrix[0])
-print(matrix[1])
-print(matrix[2])
+# output
+for l in range(3):
+    for c in range(3):
+        print(f'[{matrix[l][c]:^5}]', end='')
+    print() #quebra a linha a cada laço completo de l e c
