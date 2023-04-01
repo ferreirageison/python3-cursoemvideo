@@ -1,0 +1,1 @@
+# faça um mini sistema que utilize o interactive help do python. o usuário vai digitar o comando e o manual vai aparecer. quando o usuário digitar a palavra 'FIM', o programa se encerrará. obs. usar cores.

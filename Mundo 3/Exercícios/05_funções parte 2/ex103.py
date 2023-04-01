@@ -1,0 +1,1 @@
+# crie um programa que tenha uma funçao chamada ficha(), q receba 2 parametros opcionais: o nome de um jogador e quantos gols ele marcou. O programa deverá ser capaz de mostrar a ficha do jogador, mesmo q algum dado nao tenha sido informado corretamente.
