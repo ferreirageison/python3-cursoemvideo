@@ -3,7 +3,7 @@
 from random import randint
 
 numeros = randint(0,9), randint(0,9), randint(0,9), randint(0,9), randint(0,9)
-# numeros = tuple(randint(i, 9) for i in range(0, 5)) # soluçao com tuple
+# numeros = tuple(randint(i, 9) for i in range(0, 5)) # soluçao com for
 
 maior = max(numeros)
 menor = min(numeros)
