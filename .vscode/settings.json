@@ -1,4 +1,7 @@
 {
-    "python.analysis.typeCheckingMode": "off",
-    "editor.parameterHints.enabled": true
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.parameterHints.enabled": true,
+    "python.analysis.extraPaths": [
+        "./Mundo 3/Exercícios/06_modulos e pacotes/ex110"
+    ]
 }

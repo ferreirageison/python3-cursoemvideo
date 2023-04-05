@@ -1,6 +1,6 @@
 # adapte o código do desafio 107, criando uma função adicional chamada moeda() que consiga mostrar os números como um valor monetário formatado.
 
-#módulo
+#módulo ex 108
 
 def dobro(preço):
     return  preço * 2
